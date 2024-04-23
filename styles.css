@@ -14,6 +14,10 @@ h1 {
   color: #fff;
 }
 
+.main {
+  transform: scale(0.7, 0.7) translate(0, 650px);
+}
+
 /* Planets */
 
 .orbit {
