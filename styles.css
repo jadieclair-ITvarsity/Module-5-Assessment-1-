@@ -247,8 +247,8 @@ h1 {
   margin: 0;
 }
 
-.label-box a:visited {
-  color: #fff;
+div.label-box a:visited {
+  color: #fff !important;
 }
 
 /* Animation */
