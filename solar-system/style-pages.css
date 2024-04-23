@@ -5,3 +5,9 @@
 li.nav-item a:visited {
   color: #fff;
 }
+
+footer p a {
+  text-decoration: none;
+  color: #baa686;
+  font-size: 18px;
+}
