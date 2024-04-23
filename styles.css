@@ -1,0 +1,268 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: url("./solar-system/images/space.png") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  text-shadow: 0 0 10px #000;
+  color: #fff;
+}
+
+.container {
+  transform: scale(0.8, 0.8) translate(0, 700px);
+}
+
+/* Planets */
+
+.orbit {
+  position: absolute;
+  border: 1px dotted #fff;
+  border-radius: 50%;
+  left: 50%;
+}
+
+.planet {
+  z-index: 1000;
+}
+
+/* Sun */
+
+.sun {
+  position: absolute;
+  z-index: 1000;
+  width: 160px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Neptune */
+
+.neptune {
+  width: 66px;
+  height: 66px;
+  margin: 143px;
+  animation: spin-right 4s linear infinite;
+  -webkit-animation: spin-right 4s linear infinite;
+}
+
+.neptune-orbit {
+  width: 1204px;
+  height: 1204px;
+  bottom: -512px;
+  margin-left: -602px;
+  animation: spin-left 10s linear infinite;
+  -webkit-animation: spin-left 10s linear infinite;
+}
+
+#neptune-label {
+  bottom: 692px;
+}
+
+/* Uranus*/
+
+.uranus {
+  width: 66px;
+  height: 66px;
+  margin: 120px;
+  animation: spin-right 4s linear infinite;
+  -webkit-animation: spin-right 4s linear infinite;
+}
+
+.uranus-orbit {
+  width: 1062px;
+  height: 1062px;
+  bottom: -441px;
+  margin-left: -531px;
+  animation: spin-left 12s linear infinite;
+  -webkit-animation: spin-left 12s linear infinite;
+}
+
+#uranus-label {
+  bottom: 620px;
+}
+
+/* Saturn*/
+
+.saturn {
+  width: 110px;
+
+  margin: 85px;
+
+  animation: spin-right 6s linear infinite;
+  -webkit-animation: spin-right 6s linear infinite;
+}
+
+.saturn-orbit {
+  width: 876px;
+  height: 876px;
+  bottom: -348px;
+  margin-left: -438px;
+  animation: spin-left 10s linear infinite;
+  -webkit-animation: spin-left 10s linear infinite;
+}
+
+#saturn-label {
+  bottom: 527px;
+}
+
+/* Jupiter */
+
+.jupiter {
+  width: 100px;
+  height: 100px;
+  margin: 45px;
+  animation: spin-right 10s linear infinite;
+  -webkit-animation: spin-right 10s linear infinite;
+}
+
+.jupiter-orbit {
+  width: 656px;
+  height: 656px;
+  bottom: -238px;
+  margin-left: -328px;
+  animation: spin-left 11s linear infinite;
+  -webkit-animation: spin-left 11s linear infinite;
+}
+
+#jupiter-label {
+  bottom: 417px;
+}
+
+/* Mars */
+
+.mars {
+  width: 38px;
+  height: 38px;
+  margin: 55px;
+  animation: spin-right 3s linear infinite;
+  -webkit-animation: spin-right 3s linear infinite;
+}
+
+.mars-orbit {
+  width: 508px;
+  height: 508px;
+  bottom: -164px;
+  margin-left: -254px;
+  animation: spin-left 7s linear infinite;
+  -webkit-animation: spin-left 7s linear infinite;
+}
+
+#mars-label {
+  bottom: 343px;
+}
+
+/* Earth */
+
+.earth {
+  width: 50px;
+  height: 50px;
+  margin: 36px;
+  animation: spin-right 3s linear infinite;
+  -webkit-animation: spin-right 3s linear infinite;
+}
+
+.earth-orbit {
+  width: 410px;
+  height: 410px;
+  bottom: -115px;
+  margin-left: -205px;
+  animation: spin-left 5s linear infinite;
+  -webkit-animation: spin-left 5s linear infinite;
+}
+
+#earth-label {
+  bottom: 294px;
+}
+
+/* Venus */
+
+.venus {
+  width: 50px;
+  height: 50px;
+  margin: 16px;
+  animation: spin-right 6s linear infinite;
+  -webkit-animation: spin-right 6s linear infinite;
+}
+
+.venus-orbit {
+  width: 300px;
+  height: 300px;
+  bottom: -60px;
+  margin-left: -150px;
+  animation: spin-left 4s linear infinite;
+  -webkit-animation: spin-left 4s linear infinite;
+}
+
+#venus-label {
+  bottom: 239px;
+}
+
+/* Mercury */
+
+.mercury {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  animation: spin-right 2s linear infinite;
+  -webkit-animation: spin-right 2s linear infinite;
+}
+
+.mercury-orbit {
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  bottom: -10px;
+  margin-left: -100px;
+  animation: spin-left 3s linear infinite;
+  -webkit-animation: spin-left 3s linear infinite;
+}
+
+#mercury-label {
+  bottom: 189px;
+}
+
+/* Label Box */
+
+.label-box {
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  margin-left: -75px;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.label-box a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.label-box a:visited {
+  color: #fff;
+}
+
+/* Animation */
+
+@keyframes spin-left {
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
