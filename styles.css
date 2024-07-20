@@ -13,6 +13,7 @@ h1 {
   font-weight: 100;
   font-size: 40px;
   color: #fff;
+  margin-top: 1rem;
 }
 
 .main {
@@ -273,5 +274,13 @@ h1 {
   100% {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+  }
+}
+
+/* Media query */
+
+@media screen and(max-width: 768px) {
+  h1 {
+    font-size: 20px;
   }
 }
